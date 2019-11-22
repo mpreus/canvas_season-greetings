@@ -5,7 +5,7 @@ function init() {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
         canvas.style.backgroundColor = "#fff";
-        let c = canvas.getContext("2d");
+        let c = canvas.getContext("2d"); /* context can be named arbitrarily*/
 
     class Circle {
         /* circle pattern: arc(x, y, radius, start, end) */
@@ -83,6 +83,62 @@ function init() {
         c.lineTo(window.innerWidth / 2 + 83, window.innerHeight - 200);
         c.lineTo(window.innerWidth / 2, window.innerHeight - 450);
         c.fillStyle = "rgba(288, 288, 288, 0.5)"; /* color of the snow */
+        c.fill();
+
+        /* tree decorations */
+        c.beginPath();
+        c.arc(750, 800, 15, 0, 2 * Math.PI);
+        c.fillStyle = "rgba(150, 5, 5, 1)"; 
+        c.fill();
+
+        c.beginPath();
+        c.arc(760, 620, 15, 0, 2 * Math.PI);
+        c.fillStyle = "rgba(150, 5, 5, 1)"; 
+        c.fill();
+
+        c.beginPath();
+        c.arc(650, 600, 15, 0, 2 * Math.PI);
+        c.fillStyle = "rgba(150, 5, 5, 1)"; 
+        c.fill();
+
+        c.beginPath();
+        c.arc(730, 500, 15, 0, 2 * Math.PI);
+        c.fillStyle = "rgba(186, 109, 222, 1)"; 
+        c.fill();
+
+        c.beginPath();
+        c.arc(730, 700, 15, 0, 2 * Math.PI);
+        c.fillStyle = "rgba(186, 109, 222, 1)"; 
+        c.fill();
+
+        c.beginPath();
+        c.arc(800, 700, 15, 0, 2 * Math.PI);
+        c.fillStyle = "gold"; 
+        c.fill();
+
+        c.beginPath();
+        c.arc(640, 730, 15, 0, 2 * Math.PI);
+        c.fillStyle = "gold"; 
+        c.fill();
+
+        c.beginPath();
+        c.arc(660, 780, 15, 0, 2 * Math.PI);
+        c.fillStyle = "rgba(14, 52, 240, 1)"; 
+        c.fill();
+
+        c.beginPath();
+        c.arc(630, 680, 15, 0, 2 * Math.PI);
+        c.fillStyle = "rgba(14, 52, 240, 1)"; 
+        c.fill();
+
+        c.beginPath();
+        c.arc(720, 580, 15, 0, 2 * Math.PI);
+        c.fillStyle = "rgba(14, 52, 240, 1)"; 
+        c.fill();
+
+        c.beginPath();
+        c.arc(720, 370, 15, 0, 2 * Math.PI);
+        c.fillStyle = "gold"; 
         c.fill();
 
         circleArray.forEach(function(circle) {
